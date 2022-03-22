@@ -1,0 +1,30 @@
+.bar{
+    background-color: #0a334f;
+}
+.container {
+    color:white;
+    font-size: 14px;
+    font-weight: 300;
+}
+.contact{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.icons{
+    display: flex;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+.icon > div {
+    margin-left:8px;
+}
+.socialMediaIcon {
+    padding: 1rem;
+}
+.divider {
+    border-left: 1px solid white;
+}

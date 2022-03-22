@@ -1,0 +1,140 @@
+.cover {
+  background-image: url('../public/assets/images/cover.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .imageText {
+    color: white;
+    font-size: 52px;
+    font-weight: 600;
+    max-width: 75%;
+    min-width: 30%;
+    line-height: 95%;
+    padding-top: 20px;
+  }
+  .subImageText {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    max-width: 50%;
+    min-width: 30%;
+    padding-top: 20px;
+  }
+  .headImageText {
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    max-width: 60%;
+    min-width: 30%;
+    letter-spacing: 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .imageText {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 70%;
+    min-width: 30%;
+    line-height: 95%;
+    padding-top: 20px;
+
+  }
+  .subImageText {
+    color: white;
+    font-size: 10px;
+    font-weight: 200;
+    max-width: 50%;
+    min-width: 30%;
+    padding-top: 20px;
+  }
+  .headImageText {
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+    max-width: 50%;
+    min-width: 30%;
+    letter-spacing: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .imageText {
+    color: white;
+    font-size: 64px;
+    font-weight: 600;
+    max-width: 70%;
+    min-width: 30%;
+    line-height: 95%;
+  }
+  .subImageText {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    max-width: 50%;
+    min-width: 30%;
+  }
+  .headImageText {
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    max-width: 50%;
+    min-width: 30%;
+    letter-spacing: 5px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .imageText {
+    color: white;
+    font-size: 64px;
+    font-weight: 600;
+    max-width: 50%;
+    min-width: 30%;
+    line-height: 95%;
+  }
+  .subImageText {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    max-width: 50%;
+    min-width: 30%;
+  }
+  .headImageText {
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    max-width: 36%;
+    min-width: 30%;
+    letter-spacing: 5px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+    .imageText {
+      color: white;
+      font-size: 64px;
+      font-weight: 600;
+      max-width: 50%;
+      min-width: 30%;
+      line-height: 95%;
+    }
+    .subImageText {
+      color: white;
+      font-size: 16px;
+      font-weight: 200;
+      max-width: 50%;
+      min-width: 30%;
+    }
+    .headImageText {
+      color: white;
+      font-size: 18px;
+      font-weight: 200;
+      max-width: 36%;
+      min-width: 30%;
+      letter-spacing: 5px;
+    }
+  }

@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 10%;
+    background-color: orange;
+}
+
+.loginButton {
+    background-color: #dd484e;
+    color: white;
+    border:0;
+}
