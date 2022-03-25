@@ -1,13 +1,37 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
 import styles from "../styles/SearchBar.module.css";
 import { MdLocationOn } from "react-icons/md";
 import { FaRegCalendarAlt, FaChevronCircleRight } from "react-icons/fa";
+import InputWithIcon from "./InputWithIcon";
 const SearchBar = () => {
   return (
     <div className={styles.searchBar}>
-      <Container>
-        <Row className="d-flex justify-content-between align-items-center">
+      <div className="container">
+        <div className={styles.SearchGrid}>
+          <div>
+            <div className={styles.find}>FIND YOUR PERFECT CAR</div>
+          </div>
+          <div className={styles.inputGroups}>
+            <InputWithIcon placeHolder="Pickup Location">
+              <MdLocationOn size={16} color={"#cdcdcd"} />
+            </InputWithIcon>
+            <InputWithIcon placeHolder="Drop-Off Location">
+              <MdLocationOn size={16} color={"#cdcdcd"} />
+            </InputWithIcon>
+            <InputWithIcon placeHolder="Pickup Date/Time">
+              <FaRegCalendarAlt size={16} color={"#cdcdcd"} />
+            </InputWithIcon>
+            <InputWithIcon placeHolder="Drop-Off Date/Time">
+              <FaRegCalendarAlt size={16} color={"#cdcdcd"} />
+            </InputWithIcon>
+          </div>
+          <div className={styles.searchButton}>
+            <FaChevronCircleRight size={24} color={"white"} />
+            <p>SEARCH</p>
+          </div>
+        </div>
+
+        {/* <Row className="d-flex justify-content-between align-items-center">
           <Col md="3">
             <div className={styles.find}>FIND YOUR PERFECT CAR</div>
           </Col>
@@ -75,8 +99,8 @@ const SearchBar = () => {
                 SEARCH
               </div>
           </Col>
-        </Row>
-      </Container>
+        </Row> */}
+      </div>
     </div>
   );
 };

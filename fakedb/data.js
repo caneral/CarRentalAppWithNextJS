@@ -17,5 +17,37 @@ export const infoData = [
         subtitle: "Lorem ipsum dolor sit amet consectetur adipis incididunt ut labore et dolore magna aliqua ut nostrud exercitation ullamco.",
         imagePath: "assets/images/lots.png"
     },
+]
 
+export const MenuItems = [
+    {
+        title: 'HOME',
+        url: '#',
+        cName: 'NavLinks'
+    },
+    {
+        title: 'ABOUT',
+        url: '#',
+        cName: 'NavLinks'
+    },
+    {
+        title: 'GALLERY',
+        url: '#',
+        cName: 'NavLinks'
+    },
+    {
+        title: 'FLEET',
+        url: '#',
+        cName: 'NavLinks'
+    },
+    {
+        title: 'NEWS',
+        url: '#',
+        cName: 'NavLinks'
+    },
+    {
+        title: 'CONTACT',
+        url: '#',
+        cName: 'NavLinks'
+    }
 ]

@@ -1,12 +1,12 @@
 import React from "react";
-import { Container } from "reactstrap";
-import styles from "../styles/ImageCover.module.css";
+import styles from "../styles/HeroSection.module.css";
+import NavBar from "./NavBar";
 
-const ImageCover = () => {
+const HeroSection = () => {
   return (
-    <div>
-      <div className={styles.cover}>
-        <Container>
+      <div className={styles.hero}>
+        <NavBar/>
+        <div className="container">
           <div className={styles.headImageText}>
           WELCOME TO LIMOREX
           </div>
@@ -15,10 +15,9 @@ const ImageCover = () => {
           Dolore magna aliqua ut enim ad minim veniam quis nostrud exercita
           ullamco laboris nisiut aliquip ex ea commodo consequat.
         </div>
-        </Container>
+        </div>
       </div>
-    </div>
   );
 };
 
-export default ImageCover;
+export default HeroSection;

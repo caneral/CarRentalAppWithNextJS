@@ -41,3 +41,11 @@
     border: 0;
         box-shadow: 0 0 1px black;
 }
+
+.ButtonGroups {
+    display: inline-flex;
+    box-shadow: 0 2px 20px #e1e5ee;
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 40px 0 20px 0;
+}

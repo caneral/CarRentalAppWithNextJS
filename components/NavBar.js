@@ -1,59 +1,50 @@
-import React from "react";
-import {
-  Col,
-  Container,
-  Navbar,
-  Row,
-  NavbarBrand,
-  NavbarToggler,
-  Collapse,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
-  Button,
-} from "reactstrap";
+import React, { useState } from "react";
 import styles from "../styles/NavBar.module.css";
+import { MenuItems } from "../fakedb/data";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const NavBar = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
+
   return (
-    <Container>
-      <Navbar expand="md" light>
-        <NavbarBrand href="/">
-          <img src="assets/logo/logo.png" />
-        </NavbarBrand>
-        <NavbarToggler onClick={function noRefCheck() {}} />
-        <Collapse className="justify-content-end " navbar>
-          <Nav navbar>
-            <NavItem>
-              <NavLink href="/components/">HOME</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components/">ABOUT</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components/">GALLERY</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components/">FLEET</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components/">NEWS</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components/">CONTACT</NavLink>
-            </NavItem>
-          </Nav>
-          <NavbarText>
-            <Button className={styles.loginButton}>Login / Register</Button>
-          </NavbarText>
-        </Collapse>
-      </Navbar>
-    </Container>
+    <div className={styles.bg}>
+      <div className="container">
+        <header className={styles.Header}>
+          <img className={styles.Brand} src="assets/logo/logo.png" />
+          <nav>
+            <ul className={styles.NavLinks}>
+              {MenuItems.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <a href={item.url}>{item.title}</a>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+          <button className={styles.loginButton}>Login / Register</button>
+          <div className={styles.HamburgerIcon} onClick={handleClick}>
+            <GiHamburgerMenu size={24} color={"black"} />
+          </div>
+          <ul className={clicked ? ` ${styles.MobileMenu}` : styles.close}>
+            {MenuItems.map((item, index) => {
+              return (
+                <li key={index}>
+                  <a href={item.url}>{item.title}</a>
+                </li>
+              );
+            })}
+            <button className={styles.loginMobileButton}>
+              Login / Register
+            </button>
+          </ul>
+        </header>
+      </div>
+    </div>
   );
 };
 

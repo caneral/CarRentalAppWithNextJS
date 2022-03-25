@@ -1,30 +1,63 @@
-.bar{
-    background-color: #0a334f;
+.bar {
+  background-color: #0a334f;
+  color: white;
 }
 .container {
-    color:white;
-    font-size: 14px;
-    font-weight: 300;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
 }
-.contact{
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-    padding: 1rem;
+.contact {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  padding: 1rem;
 }
-.icons{
-    display: flex;
+.icons {
+  display: flex;
 }
 .icon {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .icon > div {
-    margin-left:8px;
+  margin-left: 8px;
 }
 .socialMediaIcon {
-    padding: 1rem;
+  padding: 1rem;
 }
 .divider {
-    border-left: 1px solid white;
+  border-left: 1px solid white;
 }
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+
+.NavLinks {
+  list-style: none;
+  margin: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.NavLinks li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.Left {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Left li {
+  display: inline-block;
+  padding: 0px 5px 0 0;
+}
+
+

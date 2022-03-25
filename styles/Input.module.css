@@ -1,0 +1,23 @@
+.input {
+    padding: 1rem;
+    font-size: 15px;
+    height: 1rem;
+    border: none;
+    outline: none;
+    font-style: italic;
+    font-weight: 100;
+    opacity: 60%;
+    width: 200px;
+}
+.icon{
+    position: absolute;
+    width: 16px;
+    height: 16x;
+    top: 1rem;
+    right: 6px;
+}
+
+.inputwithicon {
+    position: relative;
+    background-color: white;
+}

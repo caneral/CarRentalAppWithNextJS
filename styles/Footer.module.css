@@ -1,13 +1,13 @@
 .bg {
   background-color: #1d1d1d;
   height: auto;
-  width: 100vw;
   padding-top: 40px;
   color: white;
 }
 
 .info {
-  width: 350px;
+  width: 300px;
+  grid-column: auto / span 2 ;
 }
 
 .cardText {
@@ -35,3 +35,11 @@
   font-weight: 200;
   font-size: 15px;
 }
+
+
+.Row {
+  display: grid;
+  grid-template-columns:  repeat(auto-fit, minmax(10rem, 12rem));
+  gap: 1rem;
+}
+

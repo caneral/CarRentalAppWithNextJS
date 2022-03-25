@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Container } from "reactstrap";
 import styles from "../styles/ReadMore.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { get } from "../features/infoSlice";
@@ -11,9 +10,10 @@ const ReadMore = () => {
   }, []);
 
   const informations = useSelector((state) => state.info);
+  
   return (
     <div>
-      <Container>
+      <div className="container">
         <div className={styles.wrapper}>
           {informations?.data.map((item, index) => {
             return (
@@ -30,7 +30,7 @@ const ReadMore = () => {
             );
           })}
         </div>
-      </Container>
+      </div>
       <div className={styles.border} />
     </div>
   );

@@ -1,13 +1,112 @@
-.header{
+.bg{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.Header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 10%;
-    background-color: orange;
+    height: 80px;
+    position: relative;
+}
+
+.NavLinks {
+    list-style: none;
+    margin: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.NavLinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.NavLinks a {
+    text-decoration: none;
 }
 
 .loginButton {
     background-color: #dd484e;
     color: white;
     border:0;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.Brand{
+    margin-right: auto;
+}
+
+.NavLinksMobile {
+    display: none;
+}
+
+.HamburgerIcon {
+    display: none;
+    cursor: pointer;
+    margin: auto 0;
+}
+
+.close {
+    display: none;
+}
+
+.MobileMenu {
+    display: none;
+}
+
+.open {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: red;
+    height: calc(100vh - 50px);
+
+}
+
+@media screen and (max-width: 1080px) {
+    .Header nav {
+        display: none;
+    }
+    .loginButton{
+        display: none;
+    }
+    .HamburgerIcon{
+        display: block;
+    }
+    .MobileMenu {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: red;
+        top: 100px;
+        height: auto;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: white;
+        border-radius: 8px;
+    }
+    
+    .MobileMenu li {
+        display: inline-block;
+        padding: 10px 20px;
+    }
+    
+    .MobileMenu a {
+        text-decoration: none;
+    }
+    .loginMobileButton {
+        background-color: #dd484e;
+        color: white;
+        border:0;
+        padding: 20px 30px;
+        margin: 10px 0;
+    }
 }

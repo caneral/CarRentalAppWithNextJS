@@ -1,0 +1,14 @@
+.Button {
+    padding: 16px 22px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid #cccccc;
+    background: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.Button:last-child {
+    border-right: none;
+}
